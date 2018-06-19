@@ -1,0 +1,23 @@
+@mixin font_size_mixin($font_min, $font_max, $min_screen_width, $max_screen_width) {
+  font-size: calc((#{$font_min} + 0px) + (#{$font_max} - #{$font_min})*(100vw - (#{$min_screen_width} + 0px)) / (#{$max_screen_width} - #{$min_screen_width}));
+}
+
+@mixin title_mixin() {
+  @include font_size_mixin(30, 22, 320, 1920);
+  color: $base-grey;
+  font-family: "Playfair Display";
+  font-weight: normal;
+}
+
+@mixin base_text_mixin($max, $min ) {
+  @include font_size_mixin(30, 22, 320, 1920);
+  color: $light-grey;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.base_title {
+  @include title_mixin();
+}

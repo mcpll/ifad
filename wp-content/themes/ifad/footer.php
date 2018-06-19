@@ -13,20 +13,22 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ifad' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'ifad' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ifad' ), 'ifad', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="site-footer container-fluid">
+        <div class="row align-items-center main-separator">
+            <div class="col-3 col-sm-2 col-lg-1">
+                <p class="italic base_title">Footer</p>
+            </div>
+            <div class="col-9 col-sm-10 col-lg-11">
+                <hr>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="site-info text-center">
+                    <p class="credits text-xs">© 2015 IFAD, Via Paolo di Dono, 44, 00142 Roma, ITALY, P.IVA 06159830485</p>
+                </div><!-- .site-info -->
+            </div>
+        </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

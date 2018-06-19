@@ -89,3 +89,6 @@ if ( !defined('ABSPATH') )
 
 /** Imposta le variabili di WordPress ed include i file. */
 require_once(ABSPATH . 'wp-settings.php');
+
+/** Settaggio API KEY MAP DI GOOGLE */
+define('GMAP_API_KEY', 'AIzaSyDoTNmxGwB9ju2friLZhyxfkXxieX0EOOw');
